@@ -1,15 +1,21 @@
 {
-  "name": "atomic-ui",
+  "name": "ui-fragments",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "format": "prettier 'src/**/*.{css,js,jsx,ts,tsx}' --write"
+    "format": "prettier 'src/**/*.{css,js,jsx,ts,tsx}' --write",
+    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript",
+    "prebuild": "rm -rf ./lib"
   },
   "eslintConfig": {
     "extends": [
@@ -29,6 +35,10 @@
       "last 1 safari version"
     ]
   },
+  "peerDependencies": {
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
@@ -43,6 +53,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.8",
+    "styled-components": "^5.2.1",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
