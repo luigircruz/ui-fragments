@@ -4,7 +4,7 @@ A minimal component UI library that you can easily pull into your React projects
 
 ## Installation 
 
-```bash
+```sh
 # NPM
 npm install ui-fragments
 
