@@ -33,3 +33,7 @@ Main objective of this project build a utility React UI components that can be e
 - Tabs
 
 ...and more
+
+## Contributing
+
+If you're interested in contributing to UI Fragments, please read our [contributing docs](https://github.com/luigircruz/ui-fragments/blob/main/CONTRIBUTING.md) **before submitting a pull request**.
